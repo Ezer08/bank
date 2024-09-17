@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 
 # Load the trained model
-model_path = r'C:\Users\ezer2\Desktop\jupiter\Financial inclusion\Financial_inclusion.pkl'
+model_path = 'Financial_inclusion.pkl'
 with open(model_path, 'rb') as file:
     model = pickle.load(file)
 
