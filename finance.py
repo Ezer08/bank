@@ -2,10 +2,16 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-# Load the trained model
+# Load the trained model from the GitHub repository
 model_path = 'Financial_inclusion.pkl'
+
+# Open the file and load the model
 with open(model_path, 'rb') as file:
     model = pickle.load(file)
+
+
+
+
 
 # Mappings for categorical features
 country_mapping = {0: 'Kenya', 1: 'Rwanda', 2: 'Tanzania', 3: 'Uganda'}
